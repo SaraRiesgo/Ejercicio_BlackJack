@@ -1,0 +1,185 @@
+body {
+  background-image: linear-gradient(
+      rgba(250, 190, 190, 0.5),
+      rgba(51, 51, 51, 0.5)
+    ),
+    url("../images/cabecera.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(192, 121, 70, 0.352);
+  backdrop-filter: blur(4px);
+}
+
+.header h1 {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 0;
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #d61e1e, #2b291e);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.962);
+  transition: transform 0.3s ease;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  cursor: pointer;
+}
+.header h1:hover {
+  transform: scale(1.03); /* aumenta el tamaño ligeramente */
+}
+#bienvenido {
+  color: rgba(255, 255, 255, 0.862);
+}
+h2,
+h3 {
+  text-align: center;
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.369);
+  color: white;
+}
+h2 {
+  font-size: 25px;
+  margin-top: 15px;
+}
+h3 {
+  font-size: 25px;
+}
+#juego {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  width: 100%;
+  height: 700px;
+}
+
+.banca {
+  text-align: center;
+  width: 35%;
+  height: 600px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 3px solid rgba(10, 10, 10, 0.374);
+  border-radius: 10px;
+}
+.cartas-banca {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.cabecera-resultados {
+  text-align: center;
+  border-radius: 10px;
+}
+.resultados {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  background-color: rgba(219, 151, 3, 0.2);
+  text-align: center;
+  color: #000000d3;
+  line-height: 1.9;
+  border: 3px solid rgba(10, 10, 10, 0.374);
+  border-radius: 10px;
+  border-style: dashed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 290px;
+  height: 400px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+.resultados h3 {
+  margin-top: 25px;
+  align-self: flex-start;
+  text-align: center;
+  width: 100%;
+}
+.jugador {
+  width: 35%;
+  height: 600px;
+  margin-right: 10px;
+  text-align: center;
+  margin-top: 10px;
+  border: 3px solid rgba(10, 10, 10, 0.374);
+  display: flex;
+  flex-direction: column;
+  /* Organiza los elementos verticalmente */
+  justify-content: flex-start;
+  /* Asegura que las cartas estén en la parte superior */
+  border-radius: 10px;
+}
+.cartas-jugador {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.botones {
+  margin-top: auto;
+  /* Esto empuja los botones hacia abajo */
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+button {
+  margin: 10px;
+  padding: 15px;
+  background: linear-gradient(170deg, #d61e1e, #684949);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  border: none;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+button:hover {
+  transform: scale(1.1);
+}
+#cartas-banca img,
+#cartas-jugador img {
+  width: 100px;
+  height: auto;
+  /* Mantiene la proporción de la imagen */
+  margin: 5px;
+  /* Espacio entre las cartas */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#cartas-banca img:hover {
+  transform: translateY(-5px) scale(1.1);
+}
+#cartas-jugador img:hover {
+  transform: translateY(-5px) scale(1.1);
+}
